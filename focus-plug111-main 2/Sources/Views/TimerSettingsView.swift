@@ -31,7 +31,7 @@ struct TimerSettingsView: View {
                                 Text("\(minute)").tag(minute)
                             }
                         }
-                        .pickerStyle(WheelPickerStyle())
+                        .pickerStyle(MenuPickerStyle())
                         .frame(width: 80, height: 100)
                     }
                     
@@ -45,7 +45,7 @@ struct TimerSettingsView: View {
                                 Text(String(format: "%02d", second)).tag(second)
                             }
                         }
-                        .pickerStyle(WheelPickerStyle())
+                        .pickerStyle(MenuPickerStyle())
                         .frame(width: 80, height: 100)
                     }
                 }
